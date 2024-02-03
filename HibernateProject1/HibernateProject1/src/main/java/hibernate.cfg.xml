@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+	"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+	"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+
+<hibernate-configuration>
+	<session-factory>
+		<property name="connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mysql://localhost:3306/lnt</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">password</property>
+		<property name="dialect">org.hibernate.dialect.MySQL5Dialect</property>
+		<property name="hbm2ddl.auto">create</property>
+		<property name="show_sql">true</property>
+			<!--<mapping class="org.com.HibernateProject1.Dept" />>-->
+		<!--  <mapping class="org.com.HibernateProject1.Student" />>-->
+		<!-- <mapping class="Pack1.Student1" />>-->
+		<!--<mapping class="Pack1.Address" />>-->
+		<!--<mapping class="getpack.Student" />>-->
+		<!--<mapping class="getpack.Stud" />>-->
+		
+		<!--<mapping class="com.onetoonepack.Answer"/>>-->
+		<!--<mapping class="com.onetoonepack.Question"/
+		<mapping class="com.onetomanypack.Emp"/>
+		<mapping class="com.onetomanypack.Dept"/>
+		
+		<mapping class="manytomanypack.Emp"/>
+		<mapping class="manytomanypack.Project"/>
+		-->
+		<mapping class="assignment1.Person"/>
+		<mapping class="assignment1.PanCard"/>
+		
+
+	</session-factory>
+</hibernate-configuration>
