@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="studentBean1" class="org.cdac.Student">
+	<property name="name" value="kunal"></property>
+		<property name="rollNo" value="31"></property>
+		<property name="score" value="98"></property>
+
+	</bean>
+	<bean id="studentBean2" class="org.cdac.Student">
+
+		<property name="name" value="radha"></property>
+		<property name="rollNo" value="06"></property>
+		<property name="score" value="35"></property>
+
+	</bean>
+
+
+</beans>
