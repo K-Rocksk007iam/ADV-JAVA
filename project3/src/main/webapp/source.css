@@ -1,0 +1,75 @@
+   body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #63a4ff, #83eaf1);
+      color: #333;
+      text-align: center;
+    }
+
+    form {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      display: inline-block;
+      margin-top: 50px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 16px;
+      background-color: #f1f1f1;
+      border-radius: 8px;
+    }
+
+    table, th, td {
+      border: 1px solid #ddd;
+    }
+
+    th, td {
+      padding: 12px;
+      text-align: left;
+    }
+
+    input, select {
+      width: calc(100% - 6px);
+      padding: 10px;
+      margin: 6px 0;
+      display: inline-block;
+      border: 1px solid #ccc;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+
+    .glow-button {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 18px;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      border-radius: 25px;
+      color: #fff;
+      background-color: #4CAF50;
+      box-shadow: 0 0 10px #4CAF50;
+      transition: box-shadow 0.3s ease;
+    }
+
+    .glow-button:hover {
+      animation: glowing 1.5s infinite;
+    }
+
+    @keyframes glowing {
+      0% {
+        box-shadow: 0 0 10px #4CAF50;
+      }
+      50% {
+        box-shadow: 0 0 20px #4CAF50, 0 0 30px #4CAF50;
+      }
+      100% {
+        box-shadow: 0 0 10px #4CAF50;
+      }
+    }
